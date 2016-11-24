@@ -1,0 +1,526 @@
+[I 161123 02:03:24 web:1946] 304 GET /registe (192.168.196.1) 4.17ms
+[I 161123 02:03:24 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.1) 18.99ms
+[I 161123 02:03:24 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.1) 2.14ms
+[I 161123 02:03:24 web:1946] 304 GET /static/css/reset.css (192.168.196.1) 4.01ms
+[I 161123 02:03:24 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.1) 1.37ms
+[I 161123 02:03:24 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.1) 1.61ms
+[I 161123 02:03:24 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.1) 2.62ms
+[I 161123 02:03:24 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.1) 1.37ms
+[I 161123 02:03:24 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.1) 1.34ms
+[I 161123 02:03:24 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.1) 1.58ms
+[I 161123 02:03:25 web:1946] 200 GET /api/imageCode?pcode=&ccode=c994fe7e-96d3-41c3-8129-2707cea25cfb (192.168.196.1) 40.19ms
+[I 161123 02:05:08 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:05:12 web:1946] 304 GET /registe (192.168.196.1) 3.52ms
+[I 161123 02:05:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.1) 54.03ms
+[I 161123 02:05:12 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.1) 8.90ms
+[I 161123 02:05:12 web:1946] 304 GET /static/css/reset.css (192.168.196.1) 4.47ms
+[I 161123 02:05:12 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.1) 2.02ms
+[I 161123 02:05:12 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.1) 2.25ms
+[I 161123 02:05:12 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.1) 3.09ms
+[I 161123 02:05:12 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.1) 1.13ms
+[I 161123 02:05:12 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.1) 1.42ms
+[I 161123 02:05:12 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.1) 2.48ms
+[I 161123 02:05:12 handlers:36] preCode:
+[I 161123 02:05:13 web:1946] 200 GET /api/imageCode?pcode=&ccode=e7be8dc4-6094-4123-a406-1c401e3f7f86 (192.168.196.1) 60.20ms
+[I 161123 02:05:14 handlers:36] preCode:e7be8dc4-6094-4123-a406-1c401e3f7f86
+[I 161123 02:05:14 web:1946] 200 GET /api/imageCode?pcode=e7be8dc4-6094-4123-a406-1c401e3f7f86&ccode=212f9d56-1dd9-42be-a717-6641b47efc0a (192.168.196.1) 10.15ms
+[I 161123 02:05:15 handlers:36] preCode:212f9d56-1dd9-42be-a717-6641b47efc0a
+[I 161123 02:05:15 web:1946] 200 GET /api/imageCode?pcode=212f9d56-1dd9-42be-a717-6641b47efc0a&ccode=998e85a2-d905-4b1e-bd6e-559ef82a3852 (192.168.196.1) 12.32ms
+[I 161123 02:05:15 handlers:36] preCode:998e85a2-d905-4b1e-bd6e-559ef82a3852
+[I 161123 02:05:15 web:1946] 200 GET /api/imageCode?pcode=998e85a2-d905-4b1e-bd6e-559ef82a3852&ccode=5d69e49a-5189-4b5a-973e-138561217471 (192.168.196.1) 17.87ms
+[I 161123 02:06:29 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:08:30 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:08:43 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:08:59 web:1946] 304 GET /registe (192.168.196.1) 14.74ms
+[I 161123 02:08:59 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.1) 6.87ms
+[I 161123 02:08:59 web:1946] 304 GET /static/css/reset.css (192.168.196.1) 3.94ms
+[I 161123 02:08:59 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.1) 2.49ms
+[I 161123 02:08:59 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.1) 2.07ms
+[I 161123 02:08:59 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.1) 2.26ms
+[I 161123 02:08:59 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.1) 3.75ms
+[I 161123 02:08:59 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.1) 1.81ms
+[I 161123 02:08:59 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.1) 1.31ms
+[I 161123 02:08:59 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.1) 1.20ms
+[I 161123 02:08:59 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 34.86ms
+[I 161123 02:09:47 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 15.62ms
+[I 161123 02:10:05 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:10:15 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 26.53ms
+[I 161123 02:10:16 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 21.40ms
+[I 161123 02:10:17 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 9.08ms
+[I 161123 02:10:17 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 8.97ms
+[I 161123 02:10:18 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 15.55ms
+[I 161123 02:10:25 web:1946] 200 GET /api/imageCode?pcode=&ccode=8ac15275-49ff-4f46-b50a-0403b7a3d82d (192.168.196.1) 17.93ms
+[I 161123 02:10:54 web:1946] 200 GET /api/imageCode?pcode=bfe2e49b-49ee-4b4d-8365-bd645de542ce&ccode=864f8c09-4628-4cb9-a915-22a392940b83 (192.168.196.128) 9.88ms
+[I 161123 02:11:02 web:1946] 200 GET /api/imageCode?pcode=864f8c09-4628-4cb9-a915-22a392940b83&ccode=37e394b2-009c-4f51-9027-7070b2ab6566 (192.168.196.128) 24.61ms
+[I 161123 02:11:30 web:1946] 304 GET /api/imageCode?pcode=864f8c09-4628-4cb9-a915-22a392940b83&ccode=37e394b2-009c-4f51-9027-7070b2ab6566 (192.168.196.128) 6.48ms
+[I 161123 02:11:32 web:1946] 304 GET /api/imageCode?pcode=864f8c09-4628-4cb9-a915-22a392940b83&ccode=37e394b2-009c-4f51-9027-7070b2ab6566 (192.168.196.128) 6.16ms
+[I 161123 02:11:47 web:1946] 304 GET /api/imageCode?pcode=864f8c09-4628-4cb9-a915-22a392940b83&ccode=37e394b2-009c-4f51-9027-7070b2ab6566 (192.168.196.128) 6.13ms
+[I 161123 02:12:02 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:12:22 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 02:12:29 web:1946] 304 GET /registe (192.168.196.128) 3.42ms
+[I 161123 02:12:29 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 7.60ms
+[I 161123 02:12:30 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 1.01ms
+[I 161123 02:12:30 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.64ms
+[I 161123 02:12:30 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 1.16ms
+[I 161123 02:12:30 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.89ms
+[I 161123 02:12:30 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.14ms
+[I 161123 02:12:30 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 1.01ms
+[I 161123 02:12:30 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.91ms
+[I 161123 02:12:30 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.82ms
+[I 161123 02:12:30 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.196.128) 2.36ms
+[I 161123 02:12:30 web:1946] 200 GET /api/imageCode?pcode=&ccode=e34b3260-9681-4d85-bba0-56bd4b8550fa (192.168.196.128) 37.50ms
+[I 161123 02:12:32 web:1946] 200 GET /api/imageCode?pcode=e34b3260-9681-4d85-bba0-56bd4b8550fa&ccode=b1ff3759-22bf-4dbf-8e3e-88b08b17e329 (192.168.196.128) 11.90ms
+[I 161123 02:12:34 web:1946] 200 GET /api/imageCode?pcode=b1ff3759-22bf-4dbf-8e3e-88b08b17e329&ccode=9b224d5e-ccc3-44df-9ba9-35cbe253733f (192.168.196.128) 7.02ms
+[I 161123 02:12:35 web:1946] 200 GET /api/imageCode?pcode=9b224d5e-ccc3-44df-9ba9-35cbe253733f&ccode=705d6ec1-de9b-4e27-8706-b18849ea6ac3 (192.168.196.128) 6.35ms
+[I 161123 02:12:37 web:1946] 200 GET /api/imageCode?pcode=705d6ec1-de9b-4e27-8706-b18849ea6ac3&ccode=04386de0-36c0-4499-b1a8-3252a77d6f1c (192.168.196.128) 9.16ms
+[I 161123 02:13:58 web:1946] 200 GET /api/imageCode?pcode=04386de0-36c0-4499-b1a8-3252a77d6f1c&ccode=ac9c6663-19ad-49d4-b962-ce01d5b2f46f (192.168.196.128) 12.55ms
+[I 161123 02:15:20 web:1946] 200 GET /api/imageCode?pcode=ac9c6663-19ad-49d4-b962-ce01d5b2f46f&ccode=a4f00974-ec06-4a1f-afa5-558931efb3e1 (192.168.196.128) 16.63ms
+[I 161123 02:15:46 web:1946] 304 GET /registe (192.168.196.128) 3.77ms
+[I 161123 02:15:46 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 5.66ms
+[I 161123 02:15:46 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.88ms
+[I 161123 02:15:46 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.75ms
+[I 161123 02:15:46 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.69ms
+[I 161123 02:15:46 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 0.86ms
+[I 161123 02:15:46 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.02ms
+[I 161123 02:15:46 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 1.14ms
+[I 161123 02:15:46 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.82ms
+[I 161123 02:15:46 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 1.28ms
+[I 161123 02:15:46 web:1946] 200 GET /api/imageCode?pcode=&ccode=a1826fc1-f69e-4685-86d0-c4cf9ac1da5e (192.168.196.128) 40.26ms
+[I 161123 02:16:03 web:1946] 200 GET /api/imageCode?pcode=a1826fc1-f69e-4685-86d0-c4cf9ac1da5e&ccode=2c3a8243-09b5-41ba-8aa7-09c457be7ee7 (192.168.196.128) 15.87ms
+[I 161123 02:16:46 web:1946] 200 GET /api/imageCode?pcode=2c3a8243-09b5-41ba-8aa7-09c457be7ee7&ccode=886a0674-fa63-4e63-b7ba-6a2f5afc97a3 (192.168.196.128) 7.90ms
+[I 161123 12:55:35 web:1946] 200 GET / (192.168.196.128) 8.46ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 2.24ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 1.48ms
+[I 161123 12:55:35 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 1.26ms
+[I 161123 12:55:35 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 1.94ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.196.128) 1.38ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.196.128) 1.36ms
+[I 161123 12:55:35 web:1946] 304 GET /static/css/ihome/index.css (192.168.196.128) 1.69ms
+[I 161123 12:55:35 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 2.32ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 1.94ms
+[I 161123 12:55:35 web:1946] 304 GET /static/js/template.js (192.168.196.128) 2.11ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.196.128) 2.10ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.196.128) 1.72ms
+[I 161123 12:55:35 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.196.128) 2.41ms
+[I 161123 12:55:35 web:1946] 304 GET /static/js/ihome/index.js (192.168.196.128) 2.50ms
+[I 161123 12:55:35 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 1.66ms
+[I 161123 12:55:35 web:1946] 304 GET /static/images/home01.jpg (192.168.196.128) 4.73ms
+[W 161123 12:55:39 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 5.88ms
+[I 161123 12:55:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.196.128) 4.77ms
+[I 161123 12:57:36 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[I 161123 12:58:33 autoreload:204] /home/ljt/Desktop/ihome/handlers/baseHandler.py modified; restarting server
+[W 161123 13:12:09 web:1946] 404 GET /%7B%7Bregiste_url%7D%7D (192.168.196.128) 4.03ms
+[W 161123 13:12:17 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 1.04ms
+[I 161123 13:12:37 web:1946] 200 GET / (192.168.196.128) 10.09ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.81ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 1.03ms
+[I 161123 13:12:37 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.68ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.196.128) 0.83ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.196.128) 0.86ms
+[I 161123 13:12:37 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.97ms
+[I 161123 13:12:37 web:1946] 304 GET /static/css/ihome/index.css (192.168.196.128) 1.18ms
+[I 161123 13:12:37 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 0.97ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 1.14ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.196.128) 1.79ms
+[I 161123 13:12:37 web:1946] 304 GET /static/js/template.js (192.168.196.128) 1.03ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.196.128) 0.90ms
+[I 161123 13:12:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.196.128) 0.61ms
+[I 161123 13:12:37 web:1946] 304 GET /static/js/ihome/index.js (192.168.196.128) 1.01ms
+[I 161123 13:12:37 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 2.12ms
+[I 161123 13:12:37 web:1946] 304 GET /static/images/home01.jpg (192.168.196.128) 4.14ms
+[W 161123 13:12:38 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 0.73ms
+[I 161123 13:12:45 web:1946] 200 GET /register.html (192.168.196.128) 8.10ms
+[I 161123 13:12:45 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 1.29ms
+[I 161123 13:12:45 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 1.15ms
+[E 161123 13:12:45 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=f62c176b-3504-4fb8-b76c-58e0053bf7cf (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=f62c176b-3504-4fb8-b76c-58e0053bf7cf', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:12:45 web:1946] 500 GET /api/imageCode?pcode=&ccode=f62c176b-3504-4fb8-b76c-58e0053bf7cf (192.168.196.128) 1.28ms
+[I 161123 13:13:03 web:1946] 304 GET /register.html (192.168.196.128) 0.75ms
+[I 161123 13:13:03 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.80ms
+[I 161123 13:13:03 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 1.29ms
+[I 161123 13:13:03 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.70ms
+[I 161123 13:13:03 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.67ms
+[I 161123 13:13:03 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 0.69ms
+[I 161123 13:13:03 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.11ms
+[I 161123 13:13:03 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.83ms
+[I 161123 13:13:03 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.66ms
+[I 161123 13:13:03 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.85ms
+[E 161123 13:13:04 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:13:04 web:1946] 500 GET /api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0 (192.168.196.128) 1.67ms
+[E 161123 13:13:07 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:13:07 web:1946] 500 GET /api/imageCode?pcode=&ccode=1b4245a6-4627-4093-b59e-7ae3f0972eb0 (192.168.196.128) 1.45ms
+[I 161123 13:13:52 web:1946] 304 GET /register.html (192.168.196.128) 4.24ms
+[I 161123 13:13:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 1.17ms
+[I 161123 13:13:52 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.95ms
+[I 161123 13:13:52 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.85ms
+[I 161123 13:13:52 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.96ms
+[I 161123 13:13:52 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 0.68ms
+[I 161123 13:13:52 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 0.95ms
+[I 161123 13:13:52 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.82ms
+[I 161123 13:13:53 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.87ms
+[I 161123 13:13:53 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.72ms
+[E 161123 13:13:53 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=2bb4e3df-11be-45d5-a42f-206775e20802 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=2bb4e3df-11be-45d5-a42f-206775e20802', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:13:53 web:1946] 500 GET /api/imageCode?pcode=&ccode=2bb4e3df-11be-45d5-a42f-206775e20802 (192.168.196.128) 1.74ms
+[I 161123 13:14:35 web:1946] 304 GET /register.html (192.168.196.128) 5.75ms
+[I 161123 13:14:35 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 0.98ms
+[I 161123 13:14:35 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 1.13ms
+[I 161123 13:14:35 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.72ms
+[I 161123 13:14:35 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 0.71ms
+[I 161123 13:14:35 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.59ms
+[I 161123 13:14:35 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.01ms
+[I 161123 13:14:35 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.80ms
+[I 161123 13:14:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.73ms
+[I 161123 13:14:35 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.89ms
+[E 161123 13:14:35 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=85f084fa-17af-4cba-b7d2-5e0ec6bd535b (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=85f084fa-17af-4cba-b7d2-5e0ec6bd535b', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:14:35 web:1946] 500 GET /api/imageCode?pcode=&ccode=85f084fa-17af-4cba-b7d2-5e0ec6bd535b (192.168.196.128) 1.12ms
+[I 161123 13:14:39 web:1946] 304 GET /register.html (192.168.196.128) 0.69ms
+[I 161123 13:14:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 0.92ms
+[I 161123 13:14:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.66ms
+[I 161123 13:14:39 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.62ms
+[I 161123 13:14:39 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.63ms
+[I 161123 13:14:39 web:1946] 304 GET /static/css/ihome/register.css (192.168.196.128) 0.60ms
+[I 161123 13:14:39 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.69ms
+[I 161123 13:14:39 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.42ms
+[I 161123 13:14:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.85ms
+[I 161123 13:14:39 web:1946] 304 GET /static/js/ihome/register.js (192.168.196.128) 0.70ms
+[E 161123 13:14:39 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=f92c7df2-ac08-42e2-a9ec-23c62e0c9cd1 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=f92c7df2-ac08-42e2-a9ec-23c62e0c9cd1', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:14:39 web:1946] 500 GET /api/imageCode?pcode=&ccode=f92c7df2-ac08-42e2-a9ec-23c62e0c9cd1 (192.168.196.128) 1.15ms
+[W 161123 13:14:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 2.09ms
+[I 161123 13:14:58 web:1946] 200 GET / (192.168.196.128) 1.11ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 1.24ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.95ms
+[I 161123 13:14:58 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.74ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.196.128) 0.73ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.196.128) 0.80ms
+[I 161123 13:14:58 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.69ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.196.128) 0.97ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.81ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.196.128) 1.80ms
+[I 161123 13:14:58 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.28ms
+[I 161123 13:14:58 web:1946] 304 GET /static/css/ihome/index.css (192.168.196.128) 0.72ms
+[I 161123 13:14:58 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.196.128) 0.96ms
+[I 161123 13:14:58 web:1946] 304 GET /static/js/template.js (192.168.196.128) 0.78ms
+[I 161123 13:14:58 web:1946] 304 GET /static/js/ihome/index.js (192.168.196.128) 0.80ms
+[I 161123 13:14:58 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.75ms
+[I 161123 13:14:58 web:1946] 304 GET /static/images/home01.jpg (192.168.196.128) 1.91ms
+[W 161123 13:14:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 0.89ms
+[E 161123 13:15:00 web:1524] Uncaught exception GET /registe (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/registe', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'If-None-Match': '"c14839b7d951c8d92e374e99594630a2cd30c4ea"', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:15:00 web:1946] 500 GET /registe (192.168.196.128) 1.34ms
+[E 161123 13:15:12 web:1524] Uncaught exception GET /registe (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/registe', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:15:12 web:1946] 500 GET /registe (192.168.196.128) 1.59ms
+[E 161123 13:15:17 web:1524] Uncaught exception GET /login (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/login', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:15:17 web:1946] 500 GET /login (192.168.196.128) 1.72ms
+[E 161123 13:16:37 web:1524] Uncaught exception GET /login (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/login', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:16:37 web:1946] 500 GET /login (192.168.196.128) 0.97ms
+[E 161123 13:17:11 torndb:103] Cannot connect to MySQL on 192.168.196.128
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/usr/local/lib/python2.7/dist-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (2003, "Can't connect to MySQL server on '192.168.196.128' (101)")
+[I 161123 13:17:41 web:1946] 200 GET / (192.168.196.128) 16.05ms
+[I 161123 13:17:41 web:1946] 304 GET /static/css/ihome/main.css (192.168.196.128) 0.73ms
+[I 161123 13:17:41 web:1946] 304 GET /static/css/ihome/index.css (192.168.196.128) 1.96ms
+[I 161123 13:17:41 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.196.128) 0.68ms
+[I 161123 13:17:41 web:1946] 304 GET /static/css/reset.css (192.168.196.128) 0.95ms
+[I 161123 13:17:41 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.196.128) 0.86ms
+[I 161123 13:17:41 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.196.128) 2.49ms
+[I 161123 13:17:41 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.196.128) 1.00ms
+[I 161123 13:17:42 web:1946] 304 GET /static/js/jquery.min.js (192.168.196.128) 1.36ms
+[I 161123 13:17:42 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.196.128) 0.75ms
+[I 161123 13:17:42 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.196.128) 0.86ms
+[I 161123 13:17:42 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.196.128) 0.67ms
+[I 161123 13:17:42 web:1946] 304 GET /static/js/template.js (192.168.196.128) 0.58ms
+[I 161123 13:17:42 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.196.128) 1.23ms
+[I 161123 13:17:42 web:1946] 304 GET /static/js/ihome/index.js (192.168.196.128) 0.83ms
+[I 161123 13:17:42 web:1946] 304 GET /static/images/home01.jpg (192.168.196.128) 2.40ms
+[I 161123 13:17:42 web:1946] 304 GET /static/images/logo@128x59.png (192.168.196.128) 0.67ms
+[I 161123 13:17:42 web:1946] 200 GET /favicon.ico (192.168.196.128) 2.08ms
+[E 161123 13:17:50 web:1524] Uncaught exception GET /api/imageCode?pcode=&ccode=ccec4213-cda6-4113-abef-d425bce5fb40 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=&ccode=ccec4213-cda6-4113-abef-d425bce5fb40', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:50 web:1946] 500 GET /api/imageCode?pcode=&ccode=ccec4213-cda6-4113-abef-d425bce5fb40 (192.168.196.128) 1.78ms
+[E 161123 13:17:52 web:1524] Uncaught exception GET /api/imageCode?pcode=ccec4213-cda6-4113-abef-d425bce5fb40&ccode=ecebaa2f-0282-405f-baad-31068fbc147e (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=ccec4213-cda6-4113-abef-d425bce5fb40&ccode=ecebaa2f-0282-405f-baad-31068fbc147e', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:52 web:1946] 500 GET /api/imageCode?pcode=ccec4213-cda6-4113-abef-d425bce5fb40&ccode=ecebaa2f-0282-405f-baad-31068fbc147e (192.168.196.128) 1.00ms
+[E 161123 13:17:53 web:1524] Uncaught exception GET /api/imageCode?pcode=ecebaa2f-0282-405f-baad-31068fbc147e&ccode=5b09f002-50d9-46e0-9c98-1349c71ddddd (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=ecebaa2f-0282-405f-baad-31068fbc147e&ccode=5b09f002-50d9-46e0-9c98-1349c71ddddd', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:53 web:1946] 500 GET /api/imageCode?pcode=ecebaa2f-0282-405f-baad-31068fbc147e&ccode=5b09f002-50d9-46e0-9c98-1349c71ddddd (192.168.196.128) 1.11ms
+[E 161123 13:17:54 web:1524] Uncaught exception GET /api/imageCode?pcode=5b09f002-50d9-46e0-9c98-1349c71ddddd&ccode=c6832744-fb44-44e5-bc26-fd32dc1f5182 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=5b09f002-50d9-46e0-9c98-1349c71ddddd&ccode=c6832744-fb44-44e5-bc26-fd32dc1f5182', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:54 web:1946] 500 GET /api/imageCode?pcode=5b09f002-50d9-46e0-9c98-1349c71ddddd&ccode=c6832744-fb44-44e5-bc26-fd32dc1f5182 (192.168.196.128) 1.15ms
+[E 161123 13:17:54 web:1524] Uncaught exception GET /api/imageCode?pcode=c6832744-fb44-44e5-bc26-fd32dc1f5182&ccode=65096307-c822-451e-a621-00eb8ca5c259 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=c6832744-fb44-44e5-bc26-fd32dc1f5182&ccode=65096307-c822-451e-a621-00eb8ca5c259', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:54 web:1946] 500 GET /api/imageCode?pcode=c6832744-fb44-44e5-bc26-fd32dc1f5182&ccode=65096307-c822-451e-a621-00eb8ca5c259 (192.168.196.128) 1.05ms
+[E 161123 13:17:55 web:1524] Uncaught exception GET /api/imageCode?pcode=65096307-c822-451e-a621-00eb8ca5c259&ccode=a578f352-c911-4e57-a276-d83faf42b8b9 (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/api/imageCode?pcode=65096307-c822-451e-a621-00eb8ca5c259&ccode=a578f352-c911-4e57-a276-d83faf42b8b9', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.196.128:8000/register.html', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:17:55 web:1946] 500 GET /api/imageCode?pcode=65096307-c822-451e-a621-00eb8ca5c259&ccode=a578f352-c911-4e57-a276-d83faf42b8b9 (192.168.196.128) 1.06ms
+[I 161123 13:18:21 web:1946] 304 GET / (192.168.196.128) 0.94ms
+[W 161123 13:18:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.196.128) 2.05ms
+[E 161123 13:18:48 web:1524] Uncaught exception GET /registe (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/registe', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:18:48 web:1946] 500 GET /registe (192.168.196.128) 1.47ms
+[E 161123 13:18:58 web:1524] Uncaught exception GET /login (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/login', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:18:58 web:1946] 500 GET /login (192.168.196.128) 1.06ms
+[I 161123 13:19:47 autoreload:204] /home/ljt/Desktop/ihome/urls.py modified; restarting server
+[E 161123 13:19:57 web:1524] Uncaught exception GET /login (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/login', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:19:57 web:1946] 500 GET /login (192.168.196.128) 3.07ms
+[E 161123 13:20:00 web:1524] Uncaught exception GET / (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'If-Modified-Since': 'Wed, 23 Nov 2016 05:16:16 GMT', 'If-None-Match': '"221aeaf2ae1ab6e48220956a1002ffc9"', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:20:00 web:1946] 500 GET / (192.168.196.128) 1.22ms
+[E 161123 13:20:12 web:1524] Uncaught exception GET / (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:20:12 web:1946] 500 GET / (192.168.196.128) 2.05ms
+[E 161123 13:20:24 web:1524] Uncaught exception GET / (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'If-None-Match': '"ab3e15b2a374137e4a0d6a998c978287018af00f"', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:20:24 web:1946] 500 GET / (127.0.0.1) 1.33ms
+[E 161123 13:20:46 web:1524] Uncaught exception GET / (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:20:46 web:1946] 500 GET / (192.168.196.128) 1.11ms
+[E 161123 13:20:47 web:1524] Uncaught exception GET / (192.168.196.128)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.128', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|84e98687|d384fbaba2d158faec29ac09b1beeb3b|1479877965', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:20:47 web:1946] 500 GET / (192.168.196.128) 0.95ms
+[I 161123 13:21:37 autoreload:204] /home/ljt/Desktop/ihome/urls.py modified; restarting server
+[E 161123 13:21:44 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'If-None-Match': '"5391a5041fc66a22148061c16013c1cedbed3b3a"', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:21:44 web:1946] 500 GET / (192.168.196.1) 2.37ms
+[E 161123 13:21:44 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:21:44 web:1946] 500 GET / (192.168.196.1) 2.16ms
+[I 161123 13:22:04 autoreload:204] /home/ljt/Desktop/ihome/urls.py modified; restarting server
+[I 161123 13:22:12 autoreload:204] /home/ljt/Desktop/ihome/handlers/handlers.py modified; restarting server
+[E 161123 13:25:18 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:18 web:1946] 500 GET / (192.168.196.1) 4.36ms
+[E 161123 13:25:19 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:19 web:1946] 500 GET / (192.168.196.1) 1.06ms
+[E 161123 13:25:20 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:20 web:1946] 500 GET / (192.168.196.1) 3.53ms
+[E 161123 13:25:21 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:21 web:1946] 500 GET / (192.168.196.1) 2.33ms
+[E 161123 13:25:22 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:22 web:1946] 500 GET / (192.168.196.1) 4.57ms
+[E 161123 13:25:23 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:23 web:1946] 500 GET / (192.168.196.1) 2.87ms
+[E 161123 13:25:30 web:1524] Uncaught exception GET / (192.168.196.1)
+    HTTPServerRequest(protocol='http', host='192.168.196.128:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.196.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.196.128:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|bd944988|bd8d73fbc3635ec4122070952a19a7cf|1479747663', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/ljt/Desktop/ihome/handlers/baseHandler.py", line 21, in prepare
+        if self.request.header['Content-Type'] == 'application/json':
+    AttributeError: 'HTTPServerRequest' object has no attribute 'header'
+[E 161123 13:25:30 web:1946] 500 GET / (192.168.196.1) 2.86ms
+[I 161123 13:26:16 autoreload:204] server.py modified; restarting server
