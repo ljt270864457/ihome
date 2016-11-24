@@ -1,6 +1,9 @@
 # coding=utf-8
+import sys
+sys.path.append('..')
 from tornado.web import RequestHandler, StaticFileHandler
 import json
+from utils.session import Session
 
 
 class baseHandler(RequestHandler):
@@ -41,8 +44,10 @@ class baseHandler(RequestHandler):
     def on_finish(self):
         pass
 
+    # 获取用户名
     def get_current_user(self):
-        pass
+        self.session = Session(self)
+        return self.session.data
 
 
 class StaticFileHandler(StaticFileHandler):
