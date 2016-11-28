@@ -5,9 +5,6 @@ from constance import BASE_DIR
 from handlers.handlers import *
 
 urls = [
-    url(r'/', IndexHandler, name='IndexHandler'),
-    url(r'/registe', RegisteHandler, name='RegisteHandler'),
-    url(r'/login', LoginHandler, name='LoginHandler'),
     # 生成图片验证码
     url(r'/api/imageCode', ImageCode, name='ImageCode'),
     # 发送短信验证码
@@ -16,6 +13,19 @@ urls = [
     url(r'/api/registe', Registe, name='Registe'),
     # 登录模块
     url(r'/api/login', Login, name='Login'),
+    # 验证是否登录
+    url(r'/api/check_login', check_login, name='check_login'),
+    # 登出账号
+    url(r'/api/logout', Logout, name='Logout'),
+    # 获取用户中心的个人信息
+    url(r'/api/profile', Profile, name='Profile'),
+    # 上传个人头像
+    url(r'/api/profile/avatar', Avatar, name='Avatar'),
+    # 修改个人姓名
+    url(r'/api/profile/name', SetName, name='SetName'),
+    # 设置用户真实姓名
+    url(r'/api/profile/auth', Auth, name='Auth'),
+    # 主页
     url(r'/(.*)', StaticFileHandler,
         {'path': os.path.join(BASE_DIR, 'html'), 'default_filename': 'index.html'}),
 ]

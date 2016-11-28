@@ -11,3 +11,6 @@ SMS_EXPIRE_SECONDS = 60 * 60 * 24 * 7
 
 # session过期时间
 SESSION_EXPIRE_SECONDS = 60 * 60 * 24 * 7
+
+# 七牛顶级域名
+QN_DOMAIN = 'http://oh6m8fcqp.bkt.clouddn.com'

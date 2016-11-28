@@ -4,6 +4,18 @@ function getCookie(name) {
 }
 
 $(document).ready(function() {
+    $.ajax({
+        url: '/api/check_login',
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            if (data.errorno == "0") {
+                mobile = data.data;
+                $('#mobile').val(mobile);
+            }
+        }
+    })
+
     $("#mobile").focus(function() {
         $("#mobile-err").hide();
     });
@@ -41,7 +53,7 @@ $(document).ready(function() {
             },
             data: info,
             success: function(data) {
-                if ("0" == data.errorno) {
+                if (data.errorno == '0') {
                     window.location.href = "/";
                 }
             }

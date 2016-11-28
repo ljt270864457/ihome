@@ -61,6 +61,20 @@ class ReTools(object):
                 flag = False
                 return flag
 
+    @classmethod
+    def isIDNumber(cls, strID):
+        if len(strID.strip()) != 18:
+            flag = False
+            return flag
+        else:
+            p = re.compile(r'^\d{17}X|\d{18}')
+            if p.match(strID):
+                flag = True
+                return flag
+            else:
+                flag = False
+                return flag
+
 
 if __name__ == '__main__':
     msg = ReTools.isUserName('a1111a')

@@ -2,40 +2,27 @@
 import sys
 import logging
 sys.path.append('..')
+import os
 from utils.captcha.captcha import captcha
 from baseHandler import baseHandler
 from utils.toolKit import *
-from constance import IMG_EXPIRE_SECONDS, SMS_EXPIRE_SECONDS
+from constance import IMG_EXPIRE_SECONDS, SMS_EXPIRE_SECONDS, QN_DOMAIN
 from response_code import RET
 import json
 import random
 import hashlib
 from libs.yuntongxun.CCP import ccp
-
-# 主页
-
-
-class IndexHandler(baseHandler):
-    def get(self):
-        urls = dict(login_url=self.reverse_url('LoginHandler'),
-                    registe_url=self.reverse_url('RegisteHandler')
-                    )
-        self.render('index.html', **urls)
-
-
-# 注册页
-class RegisteHandler(baseHandler):
-    def get(self):
-        self.render('register.html')
-
-
-# 登录页
-class LoginHandler(baseHandler):
-    def get(self):
-        self.render('login.html')
+from utils.session import Session
+from utils.deractor import required_login
+from utils.saveImage import storage
 
 
 class ImageCode(baseHandler):
+    '''
+    url：/api/imageCode
+    实现功能：生成图片验证码
+    '''
+
     def get(self):
         preCode = self.get_argument('pcode', '')
         curCode = self.get_argument('ccode', '')
@@ -61,20 +48,18 @@ class ImageCode(baseHandler):
 
 
 class SendMsg(baseHandler):
+    '''
+    url：/api/sendMsg
+    实现功能：发送短信验证码
+    '''
+
     def post(self):
         """
          1.判断三个参数是否齐全
          2.对比验证码与redis中存储的是否一致，不一致，返回错误信息
          3.如果一致,生成随机数
          4.将随机数存储到redis中
-         5.将数据发送给用户
-            info = {
-            # 手机号
-            "mobile":mobile,
-            # 验证码
-            'imageCode':imageCode,
-            # 图片的ID
-            'codeId':imageCodeId
+         5.将数据发送给用户                                                                                                                           'codeId':imageCodeId
         }
         """
         mobile = self.json_args.get("mobile")
@@ -125,22 +110,25 @@ class SendMsg(baseHandler):
 
 class Registe(baseHandler):
     '''
-    1.接收用户发来的短信验证码、密码、重复密码
-    2.验证短信验证码与redis中的验证码是否一致
-    3.验证两次密码是否一致
-    4.对密码进行sha1加密
-    4.如果都一致，将用户信息存入到MySQL
-    5.跳转到登录页
-
-    info={
-            "mobile":mobile,
-            "phoneCode":phoneCode,
-            "passwd":passwd,
-            "passwd2":passwd2
-        }
+    url:/api/registe
+    实现功能：短信验证和密码验证
     '''
 
     def post(self):
+        '''
+1.接收用户发来的短信验证码、密码、重复密码
+2.验证短信验证码与redis中的验证码是否一致
+3.验证两次密码是否一致
+4.对密码进行sha1加密
+4.如果都一致，将用户信息存入到MySQL
+5.跳转到登录页
+info={
+        "mobile":mobile,
+        "phoneCode":phoneCode,
+        "passwd":passwd,
+        "passwd2":passwd2
+}
+'''
         mobile = self.json_args.get('mobile')
         phoneCode = self.json_args.get('phoneCode')
         passwd = self.json_args.get('passwd')
@@ -161,10 +149,10 @@ class Registe(baseHandler):
                 return self.write(dict(errorno=RET.PARAMERR, errmsg=u'两次输入的密码不一致'))
             else:
                 passwd = hashlib.sha1(passwd).hexdigest()
-                sql = "insert into ih_user_profile(up_name,up_mobile,up_passwd,up_admin) values(%(name)s,%(mobile)s,%(passwd)s,%(admin)s)"
+                sql = "insert into ih_user_profile(up_name,up_mobile,up_passwd) values(%(name)s,%(mobile)s,%(passwd)s)"
                 try:
                     ret = self.db.execute(
-                        sql, name=mobile, mobile=mobile, passwd=passwd, admin=0)
+                        sql, name=mobile, mobile=mobile, passwd=passwd)
                 except Exception as e:
                     logging.error(e)
                     return self.write(dict(errorno=RET.DBERR, errmsg=u'MySQL数据库查询错误'))
@@ -172,10 +160,20 @@ class Registe(baseHandler):
                     if not ret:
                         return self.write(dict(errorno=RET.DBERR, errmsg=u'MySQL数据库插入失败'))
                     else:
-                        self.write(dict(errorno=RET.OK, errmsg=u'/login'))
+                        session = Session(self)
+                        session.data['user_id'] = ret
+                        session.data['user_name'] = mobile
+                        session.data['mobile'] = mobile
+                        session.save()
+                        self.write(dict(errorno=RET.OK, errmsg=u'OK'))
 
 
 class Login(baseHandler):
+    '''
+    url:/api/login
+    实现功能：登录
+    '''
+
     def post(self):
         '''
         1.获取手机号和密码
@@ -183,8 +181,8 @@ class Login(baseHandler):
         3.与数据库中的账号密码进行比对
         4.如果无误，跳转到主页
         info = {
-            "mobile": mobile,
-            "passwd": passwd,
+                                                                                                                                        "mobile": mobile,
+                                                                                                                                        "passwd": passwd,
         };
         '''
         mobile = self.json_args.get('mobile')
@@ -192,22 +190,209 @@ class Login(baseHandler):
         if not all((mobile, passwd)):
             return self.write(dict(errorno=RET.PARAMERR, errmsg=u'请输入完整的信息'))
         passwd = hashlib.sha1(passwd).hexdigest()
-        sql = 'select up_passwd from ih_user_profile where up_mobile = %(mobile)s'
+        sql = 'select up_user_id,up_name,up_passwd from ih_user_profile where up_mobile = %(mobile)s'
         try:
             ret = self.db.get(sql, mobile=mobile)
         except Exception as e:
             logging.login(e)
             return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+        if not ret:
+            return self.write(dict(errorno=RET.NODATA, errmsg=u'没有查询到数据'))
         else:
-            if not ret:
+            real_passwd = ret.get('up_passwd')
+        if passwd != real_passwd:
+            return self.write(dict(errorno=RET.PWDERR, errmsg=u'密码错误'))
+        else:
+            session = Session(self)
+            session.data['user_id'] = ret['up_user_id']
+            session.data['user_name'] = ret['up_name']
+            session.data['mobile'] = mobile
+            session.save()
+            self.write(dict(errorno=RET.OK, errmsg=u'OK'))
+
+
+class check_login(baseHandler):
+    '''
+    url:/api/check_login
+    实现功能：验证用户是否登录
+    '''
+
+    def get(self):
+        '''
+        调用get_current_user方法确定有没有登录
+
+        '''
+        ret = self.get_current_user()
+        if not ret:
+            return self.write(dict(errorno=RET.SESSIONERR, errmsg=u'用户没有登录'))
+        else:
+            userName = ret.get('user_name')
+            return self.write(dict(errorno=RET.OK, errmsg=u'OK', data=userName))
+
+
+class Logout(baseHandler):
+    '''
+    url:/api/logout
+    实现功能：删除用户的cookie和session
+    '''
+    @required_login
+    def get(self):
+        session = Session(self)
+        session.clear()
+        return self.write(dict(errorno=RET.OK, errmsg=u'已登出'))
+
+
+class Profile(baseHandler):
+    '''
+    url:/api/profile
+    实现功能：获取用户中心的个人信息
+    '''
+
+    @required_login
+    def get(self):
+        data = self.get_current_user()
+        if not data:
+            return self.write(dict(errorno=RET.SESSIONERR, errmsg=u'用户未登录'))
+        else:
+            user_id = data.get('user_id')
+            sql = 'select up_name,up_mobile,up_avatar from ih_user_profile where up_user_id = %(user_id)s'
+            try:
+                query_data = self.db.get(sql, user_id=user_id)
+            except Exception as e:
+                return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+            if not query_data:
                 return self.write(dict(errorno=RET.NODATA, errmsg=u'没有查询到数据'))
             else:
-                real_passwd = ret.get('up_passwd')
-            if passwd != real_passwd:
-                return self.write(dict(errorno=RET.PWDERR, errmsg=u'密码错误'))
-            else:
-                self.write(dict(errorno=RET.OK, errmsg=u'/'))
-                # self.redirect('/')
+                userName = query_data.get('up_name')
+                print('userName:%s' % userName)
+                userMobile = query_data.get('up_mobile')
+                avatar_url = query_data.get('up_avatar')
+                if avatar_url:
+                    abs_img_url = os.path.join(QN_DOMAIN, avatar_url)
+                else:
+                    abs_img_url = None
+                return self.write(dict(errorno=RET.OK, errmsg=u'查询成功', name=userName, mobile=userMobile, img_url=abs_img_url))
 
-if __name__ == '__main__':
-    print dir(Login)
+
+class Avatar(baseHandler):
+    '''
+    url:/api/profile/avatar
+    实现功能：上传头像
+    '''
+    @required_login
+    def post(self):
+        data = self.get_current_user()
+        if not data:
+            return self.write(dict(errorno=RET.SESSIONERR, errmsg=u'用户未登录'))
+        else:
+            mobile = data.get('mobile')
+            files = self.request.files
+            try:
+                img_data = files['avatar'][0]['body']
+                img_key = storage(img_data)
+            except Exception as e:
+                logging.error(e)
+                return self.write(dict(errorno=RET.NODATA, errmsg=u'头像不能为空'))
+            if not img_key:
+                return self.write(dict(errorno=RET.IOERR, errmsg=u'文件上传错误'))
+            else:
+                absolute_url = os.path.join(QN_DOMAIN, img_key)
+                sql = "update ih_user_profile set up_avatar = %(url)s where up_mobile=%(mobile)s"
+                try:
+                    ret = self.db.execute(sql, url=img_key, mobile=mobile)
+                except Exception as e:
+                    return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库更新错误'))
+                else:
+                    return self.write(dict(errorno=RET.OK, errmsg=u'OK', img_url=absolute_url))
+
+
+class SetName(baseHandler):
+    '''
+    url:/api/profile/name
+    实现功能：修改昵称
+    '''
+    @required_login
+    def post(self):
+        '''
+        1.修改mysql中的数据
+        2.修改redis的数据
+        '''
+
+        user_id = self.get_current_user().get('user_id')
+        mobile = self.get_current_user().get('mobile')
+        userName = self.get_current_user().get('user_name')
+        newName = self.json_args.get('name')
+        # 判断用户名是否存在
+        sql = 'select up_name from ih_user_profile where up_name=%(name)s'
+        try:
+            ret = self.db.get(sql, name=newName)
+        except Exception as e:
+            return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+        if ret:
+            return self.write(dict(errorno=RET.DATAEXIST, errmsg=u'用户名已存在'))
+        sql = "update ih_user_profile set up_name = %(name)s where up_user_id=%(userID)s"
+        try:
+            ret = self.db.execute(sql, name=newName, userID=user_id)
+            print 'ret:%s' % ret
+        except Exception as e:
+            return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+        # 向redis中更新数据
+        try:
+            session = Session(self)
+            session_id = 'sess_%s' % session.session_id
+
+            json_data = json.dumps(
+                dict(user_id=user_id, user_name=newName, mobile=mobile))
+            self.redis.getset(session_id, json_data)
+            print('session_id:%s' % session_id)
+            print('userName:%s' % self.get_current_user().get('user_name'))
+            print 'json_data:%s' % json_data
+        except Exception as e:
+            return self.write(dict(errorno=RET.DATAERR, errmsg=u'更新缓存失败'))
+        else:
+            return self.write(dict(errorno=RET.OK, errmsg='OK'))
+
+
+# 设置用户真实姓名
+
+class Auth(baseHandler):
+    '''
+    url:/api/profile/auth
+    实现功能:
+    1.get方式显示用户名
+    2.post方式修改用户名
+    3.如果验证成功之后，不能进行更改
+    '''
+    @required_login
+    def get(self):
+        userID = self.get_current_user().get('user_id')
+        sql = "select up_real_name,up_id_card from ih_user_profile where up_user_id=%(userid)s"
+        try:
+            ret = self.db.get(sql, userid=userID)
+            print 'ret:%s' % ret
+        except Exception as e:
+            return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+        if ret:
+            real_name = ret.get('up_real_name')
+            id_number = ret.get('up_id_card')
+            if not all((real_name, id_number)):
+                return self.write(dict(errorno=RET.NODATA, errmsg=u'没有实名认证'))
+            return self.write(dict(errorno=RET.OK, errmeg=u'OK', name=real_name, id_number=id_number))
+
+    @required_login
+    def post(self):
+        userID = self.get_current_user().get('user_id')
+        real_name = self.json_args.get('real_name')
+        id_number = self.json_args.get('id_card')
+        if not ReTools.isIDNumber(id_number):
+            return self.write(dict(errorno=RET.PARAMERR, errmsg=u'身份证号码不正确'))
+        if not all((real_name, id_number)):
+            return self.write(dict(errorno=RET.PARAMERR, errmsg=u'身份证号码和真实姓名信息不完整'))
+        sql = 'update ih_user_profile set up_real_name=%(name)s,up_id_card=%(id_number)s where up_user_id=%(userid)s '
+        try:
+            ret = self.db.execute(sql, name=real_name,
+                                  id_number=id_number, userid=userID)
+            print 'ret:%s' % ret
+        except Exception as e:
+            return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+        return self.write(dict(errorno=RET.OK, errmsg=u'OK'))

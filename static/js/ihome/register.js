@@ -145,9 +145,11 @@ $(document).ready(function() {
                 "Content-Type": "application/json"
             },
             success: function(data) {
-                // console.log(data.errmsg);
-                var url = data.errmsg;
-                window.location.href=url;            
+                if (data.errorno=="0")
+                {
+                    window.location.href="/login.html";
+                }
+                          
             }
         })
 
