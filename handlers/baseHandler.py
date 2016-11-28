@@ -24,10 +24,10 @@ class baseHandler(RequestHandler):
         if self.request.headers.get('Content-Type', '').startswith('application/json'):
             self.json_args = json.loads(self.request.body)
         else:
-            self.json_args = None
+            self.json_args = {}
 
     def set_default_headers(self):
-        pass
+        self.set_header('Content-Type', 'applacation/json')
 
     def write_error(self, status_code, **kwargs):
         pass

@@ -25,6 +25,10 @@ urls = [
     url(r'/api/profile/name', SetName, name='SetName'),
     # 设置用户真实姓名
     url(r'/api/profile/auth', Auth, name='Auth'),
+    # 获取所有地区
+    url(r'/api/areas', Areas, name='Areas'),
+    # 向服务器发送房屋基本信息和详细信息
+    url(r'/api/house',House,name='House'),
     # 主页
     url(r'/(.*)', StaticFileHandler,
         {'path': os.path.join(BASE_DIR, 'html'), 'default_filename': 'index.html'}),

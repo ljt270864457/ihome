@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            %('.house-facility-list #ddd').click(function() {
+                alert(123);
+                $('input [name="facility"]:checked'){
+                    alert($(this).value);
+                }
+                
+            });
+            
+        })
+    </script>
+</head>
+<body>
+    <ul class="house-facility-list clearfix">
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="facility" value="1">无线网络
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="facility" value="2">热水淋浴
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="facility" value="3">空调
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="facility" value="4">暖气
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="facility" value="5">允许吸烟
+                </label>
+            </div>
+        </li>
+        </ul>
+        <input type="button" id="ddd"></input>
+
+</body>
+</html>
