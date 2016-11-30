@@ -14,3 +14,9 @@ SESSION_EXPIRE_SECONDS = 60 * 60 * 2
 
 # 七牛顶级域名
 QN_DOMAIN = 'http://oh6m8fcqp.bkt.clouddn.com'
+
+# areas过期时间
+AREAS_EXPIRE_SECONDS = 60 * 60 * 24 * 7
+
+# 最新5张图片的过期时间
+LATESTIMG_EXPIRE_SECONDS = 60 * 60 * 2

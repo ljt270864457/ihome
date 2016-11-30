@@ -11,14 +11,14 @@ SETTING = {
     'template_path': os.path.join(base_dir, 'html'),
     'cookie_secret': '4RgAdrMqRQ6Y/K4Wzx5Aaar8zIdGaEHmpX5dFtm4l2c=',
     'xsrf_cookies': True,
-    'login_url': '/login',
+    'login_url': '/login.html',
     'debug': True,
 }
 
 
 # MySQL设置
 MySQL_CONFIG = dict(
-    host="192.168.196.128",
+    host="192.168.196.130",
     database="ihome",
     user="root",
     password="123456",
@@ -26,7 +26,7 @@ MySQL_CONFIG = dict(
 
 # Redis设置
 REDIS_CONFIG = dict(
-    host="192.168.196.128",
+    host="192.168.196.130",
     port=6379
 )
 

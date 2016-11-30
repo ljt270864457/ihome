@@ -58,6 +58,7 @@ function goToSearchPage(th) {
 }
 
 $(document).ready(function() {
+    
     $(".top-bar>.register-login").show();
     $('.fa-user').click(function(event) {
         window.location.href = '/my.html';
@@ -81,6 +82,13 @@ $(document).ready(function() {
         autoplayDisableOnInteraction: false,
         pagination: '.swiper-pagination',
         paginationClickable: true
+    });
+    $.get('/api/house/latest', function(data) {
+        var html = template('latestHouse', {houses:data.houses});
+        document.getElementById('swiper-wrapper').innerHTML = html;
+    });
+    $.get('/api/areas', function(data) {
+        $('.area-list').html(template('Areas',{'areas':data.areas}));
     });
     $(".area-list a").click(function(e) {
         $("#area-btn").html($(this).html());

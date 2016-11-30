@@ -28,7 +28,13 @@ urls = [
     # 获取所有地区
     url(r'/api/areas', Areas, name='Areas'),
     # 向服务器发送房屋基本信息和详细信息
-    url(r'/api/house',House,name='House'),
+    url(r'/api/house', House, name='House'),
+    # 上传房屋的照片
+    url(r'/api/house/image', HouseImage, name='HouseImage'),
+    # 获取用户的所有图片
+    url(r'/api/house/myhouse', MyHouse, name='MyHouse'),
+    # 获取前五个最新发布的房源
+    url(r'/api/house/latest', LatestHouse, name='LatestHouse'),
     # 主页
     url(r'/(.*)', StaticFileHandler,
         {'path': os.path.join(BASE_DIR, 'html'), 'default_filename': 'index.html'}),

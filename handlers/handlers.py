@@ -6,7 +6,7 @@ import os
 from utils.captcha.captcha import captcha
 from baseHandler import baseHandler
 from utils.toolKit import *
-from constance import IMG_EXPIRE_SECONDS, SMS_EXPIRE_SECONDS, QN_DOMAIN
+from constance import IMG_EXPIRE_SECONDS, SMS_EXPIRE_SECONDS, QN_DOMAIN,AREAS_EXPIRE_SECONDS,LATESTIMG_EXPIRE_SECONDS
 from response_code import RET
 import json
 import random
@@ -15,6 +15,7 @@ from libs.yuntongxun.CCP import ccp
 from utils.session import Session
 from utils.deractor import required_login
 from utils.saveImage import storage
+import datetime
 
 
 class ImageCode(baseHandler):
@@ -59,7 +60,7 @@ class SendMsg(baseHandler):
 		 2.对比验证码与redis中存储的是否一致，不一致，返回错误信息
 		 3.如果一致,生成随机数
 		 4.将随机数存储到redis中
-		 5.将数据发送给用户                                                                                                                           'codeId':imageCodeId
+		 5.将数据发送给用户
 		}
 		"""
 		mobile = self.json_args.get("mobile")
@@ -180,10 +181,6 @@ class Login(baseHandler):
 		2.验证参数完整性
 		3.与数据库中的账号密码进行比对
 		4.如果无误，跳转到主页
-		info = {
-																																		"mobile": mobile,
-																																		"passwd": passwd,
-		};
 		'''
 		mobile = self.json_args.get('mobile')
 		passwd = self.json_args.get('passwd')
@@ -194,7 +191,7 @@ class Login(baseHandler):
 		try:
 			ret = self.db.get(sql, mobile=mobile)
 		except Exception as e:
-			logging.login(e)
+			logging.error(e)
 			return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
 		if not ret:
 			return self.write(dict(errorno=RET.NODATA, errmsg=u'没有查询到数据'))
@@ -406,38 +403,36 @@ class Areas(baseHandler):
 	实现功能:获取所有的城区名称
 	'''
 
-	def get(self):
-		sql = 'SELECT ai_area_id,ai_name FROM ih_area_info;'
+	def get(self): 
 		try:
-			datas = self.db.query(sql)
+			areas = self.redis.get('area_info')
 		except Exception as e:
 			logging.error(e)
-			return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+			return self.write(dict(errorno=RET.DBERR, errmsg=u'Redis数据库查询错误'))
+		if areas:
+			return self.write(dict(errorno=RET.OK, errmsg=u'OK', areas=json.loads(areas)))
 		else:
-			areas = [{'id': data.get('ai_area_id'), 'area': data.get('ai_name')}
-					 for data in datas]
-			return self.write(dict(errorno=RET.OK, errmsg=u'OK', areas=areas))
+			sql = 'SELECT ai_area_id,ai_name FROM ih_area_info;'
+			try:
+				datas = self.db.query(sql)
+			except Exception as e:
+				logging.error(e)
+				return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+			else:
+				areas = [{'id': data.get('ai_area_id'), 'area': data.get('ai_name')}
+						 for data in datas]
+				try:
+					self.redis.setex('area_info',AREAS_EXPIRE_SECONDS,json.dumps(areas))
+				except Exception as e:
+					logging.error(e)
+					return self.write(dict(errorno=RET.DBERR, errmsg=u'Redis数据库写入错误'))
+				return self.write(dict(errorno=RET.OK, errmsg=u'OK', areas=areas))
 
 
 class House(baseHandler):
 	'''
 	url:/api/house
 	实现功能：向数据库中存储房屋基本信息和详细信息
-
-	title:1
-	price:1
-	area_id:1
-	address:1
-	room_count:1
-	acreage:1
-	unit:1
-	capacity:1
-	beds:1
-	deposit:1
-	min_days:1
-	max_days:1
-	facility[]:1
-	facility[]:3
 	'''
 	@required_login
 	def post(self):
@@ -468,22 +463,20 @@ class House(baseHandler):
 		max_days = self.json_args.get('max_days')
 		# 配套设施
 		facility = self.json_args.get('facility')
-		print facility
 		if not all((userID,title,price,area_id,address,room_count,unit,capacity,beds,deposit,min_days,max_days,facility)):
 			return self.write(dict(errorno=RET.PARAMERR,errmsg=u'参数不完整'))
-		if min_days>max_days:
-			return self.write(dict(errorno=RET.PARAMERR,errmsg=u'入住时间上传有误'))
-		sql = 'insert into ih_house_info(hi_user_id,hi_title,hi_price,hi_area_id,hi_address,hi_room_count,hi_acreage,hi_house_unit,hi_capacity,hi_beds,hi_deposit,hi_min_days,hi_max_days) values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);'
+		sql = 'insert into ih_house_info(hi_user_id,hi_title,hi_price,hi_area_id,hi_address,hi_room_count,hi_acreage,hi_house_unit,hi_capacity,hi_beds,hi_deposit,hi_min_days,hi_max_days) values(%(userID)s,%(title)s,%(price)s,%(area_id)s,%(address)s,%(room_count)s,%(acreage)s,%(unit)s,%(capacity)s,%(beds)s,%(deposit)s,%(min_days)s,%(max_days)s);'
 		try:
-			houseID = self.db.execute(sql,userID,title,price*100,area_id,address,room_count,acreage,unit,capacity,beds,deposit*100,min_days,max_days)
+			houseID = self.db.execute(sql,userID=userID,title=title,price=int(price)*100,area_id=area_id,address=address, room_count=room_count,acreage=acreage,unit=unit,capacity=capacity,beds=beds,deposit=int(deposit)*100,min_days=min_days,max_days=max_days)
 		except Exception as e:
 			logging.error(e)
 			return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
 		else:
-			sql = "insert into ih_house_facility(hf_house_id,hf_facility_id) values(houseID,%s)"
+			facility_info=[(houseID,i)for i in facility]
+			sql = "insert into ih_house_facility(hf_house_id,hf_facility_id) values(%s,%s)"
 			try:
-				query_data2 = self.db.executemany(sql,facility)
-			except:
+				query_data2 = self.db.executemany(sql,facility_info)
+			except Exception as e:
 				logging.error(e)
 				sql1 = "delete from ih_house_facility where hf_house_id=%(houseID)s"
 				sql2 = "delete from ih_house_info where hi_house_id=%(houseID)s"
@@ -497,13 +490,120 @@ class House(baseHandler):
 					return self.write(dict(errorno=RET.DBERR, errmsg=u'No data save'))
 			if not query_data2:
 				return self.write(dict(errorno=RET.DBERR, errmsg=u'数据插入失败'))
-			else:
+			else:				
 				return self.write(dict(errorno=RET.OK, errmsg=u'OK',userID=userID,houseID=houseID))
 
-				
+
+class HouseImage(baseHandler):
+	'''
+	url:/api/house/image
+	实现功能：把房屋图片路径存到数据库中，并将图片存入到七牛
+	'''
+	@required_login
+	def post(self):
+		try:
+			userID = self.get_current_user().get('user_id')
+			imgFile = self.request.files['house_image'][0]['body']
+			houseID = self.get_argument('house_id')
+			img_key = storage(imgFile)			
+		except Exception as e:
+			logging.error(e)
+			return self.write(dict(errorno=RET.PARAMERR,errmsg=u'表单获取错误'))
+		if not img_key:
+			return self.write(dict(errorno=RET.IOERR, errmsg=u'文件上传错误'))		
+		sql = "insert into ih_house_image(hi_house_id,hi_url) values(%(houseID)s,%(url)s);update ih_house_info set hi_index_image_url=%(urls)s where hi_house_id=%(houseIDs)s and hi_index_image_url is null;"
+		try:
+			ret = self.db.execute(sql, houseID=houseID, url=img_key,urls=img_key,houseIDs=houseID)
+		except Exception as e:
+			return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库更新错误'))
+		else:
+			absolute_url = os.path.join(QN_DOMAIN, img_key)
+			sql = 'SELECT hi_house_id,hi_index_image_url,hi_title FROM ih_house_info order by hi_utime desc limit 5'
+			try:
+				ret = self.db.query(sql)
+			except Exception as e:
+				return self.write(dict(errorno=RET.DBERR, errmsg=u'数据库查询错误'))
+			if not ret:
+				return self.write(dict(errorno=RET.NODATA,errmsg=u'查询失败'))
+			else:
+				try:
+					houses = [{'houseID':house.get('hi_house_id'),'title':house.get('hi_title'),'url':os.path.join(QN_DOMAIN,house.get('hi_index_image_url'))} for house in ret]
+					self.redis.delete('LatestHouse')
+					self.redis.setex('LatestHouse',LATESTIMG_EXPIRE_SECONDS,json.dumps(houses))
+				except Exception as e:
+					logging.error(e)
+					return self.write(dict(errorno=RET.DBERR,errmsg=u'redis写入错误'))
+				return self.write(dict(errorno=RET.OK, errmsg=u'OK', url=absolute_url))	
+
+
+						
+class MyHouse(baseHandler):
+	'''
+	url:/api/house/my
+	实现功能：获取个人房屋基本信息
+	info={
+	
+	}
+	'''
+	@required_login
+	def get(self):
+		info = []
+		userID = self.get_current_user().get('user_id','')
+		if userID:
+			sql = 'select hi_house_id,hi_title,hi_price,hi_index_image_url,hi_ctime,ai_name  from ih_house_info  left join ih_area_info on hi_area_id=ai_area_id where hi_user_id=%s order by hi_ctime desc;'
+			try:
+				ret = self.db.query(sql,userID)
+			except Exception as e:
+				return self.write(dict(errorno = RET.DATAERR,errmsg=u'数据库查询错误'))			
+			if not ret:
+				return self.write(dict(errorno=RET.NODATA,errmsg=u'数据为空'))
+			else:
+				for data in ret:
+					info.append(dict(
+						houseID=data['hi_house_id'],
+						title = data['hi_title'],
+						price = int(data['hi_price']/100),
+						url = os.path.join(QN_DOMAIN,data['hi_index_image_url']),
+						ctime = (data['hi_ctime']+datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S'),
+						zone = data['ai_name']
+						))
+				return self.write(dict(errorno=RET.OK,errmsg='OK',info=info))
+
+class LatestHouse(baseHandler):
+	'''
+	url: /api/house/latest
+	实现功能：从缓存中加载前5条数据，如果不存在，那么就从mysql中查出前五条放到redis中
+	'''
+	def get(self):
+		try:
+			ret1 = self.redis.get('LatestHouse')
+		except Exception as e:
+			logging.error(e)
+			return self.write(dict(errorno=RET.DATAERR,errmsg=u'redis操作有误'))
+		if ret1:
+			return self.write(dict(errorno=RET.OK,errmsg=u'OK',houses=json.loads(ret1)))
+		else:
+			sql = 'SELECT hi_house_id,hi_index_image_url,hi_title FROM ih_house_info order by hi_utime desc limit 5;'
+			try:
+				ret2 = self.db.query(sql)
+			except Exception as e:
+				logging.error(e)
+				return self.write(dict(errorno=RET.DATAERR,errmsg=u'MySQL操作有误'))
+			if not ret2:
+				return self.write(dict(errorno=RET.NODATA,errmsg=u'No Data'))
+			else:
+				houses = [{'houseID':house.get('hi_house_id'),'title':house.get('hi_title'),'url':os.path.join(QN_DOMAIN,house.get('hi_index_image_url'))} for house in ret2]
+				try:
+					self.redis.setex('LatestHouse',LATESTIMG_EXPIRE_SECONDS,json.dumps(houses))
+				except Exception as e:
+					logging.error(e)
+					return self.write(dict(errorno=RET.DATAERR,errmsg=u'写入redis有误'))
+				return self.write(dict(errorno=RET.OK,errmsg=u'OK',houses=houses))
 
 
 
+
+		
 
 
 
